@@ -41,7 +41,7 @@
                 <string/>
             </gui_type>
         </element>
-        <element name="api-port" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+        <element name="api_port" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <default_value>9997</default_value>
             <short_description> up.time API Port </short_description>
@@ -56,7 +56,7 @@
                 <integer/>
             </gui_type>
         </element>
-        <element name="api-username" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+        <element name="api_username" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <short_description> username </short_description>
             <long_description> Up.time API Username </long_description>
@@ -70,7 +70,7 @@
                 <string/>
             </gui_type>
         </element>
-        <element name="api-password" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+        <element name="api_password" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <short_description> password </short_description>
             <long_description> Up.time API Username </long_description>
@@ -84,7 +84,7 @@
                 <string/>
             </gui_type>
         </element>
-        <element name="element-id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+        <element name="element_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <short_description> element-id </short_description>
             <long_description> ElementID from remote Instance </long_description>
@@ -98,7 +98,7 @@
                 <integer/>
             </gui_type>
         </element>
-        <element name="monitor-id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+        <element name="monitor_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <default_value>9997</default_value>
             <short_description> up.time API Port </short_description>
