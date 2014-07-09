@@ -108,6 +108,26 @@
                 <integer/>
             </gui_type>
         </element>
+        <element name="STATUS" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description> Status </short_description>
+            <long_description> Status of remote monitor </long_description>
+            <validation_rule/>  
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="MSG" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description> Message </short_description>
+            <long_description> Message from remote monitor </long_description>
+            <validation_rule/>  
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
         <element name="timer" parameter_type="output" data_type="integer" gui_basic="0"
             range_type="0" units="ms">
             <control_options>size:8</control_options>

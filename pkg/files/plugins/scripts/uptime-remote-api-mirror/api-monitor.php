@@ -45,14 +45,13 @@ if( isset ($element_id))
 elseif( isset ($monitor_id))
 {
     $result = $api->getMonitorStatus($monitor_id);
-    print_r($result);
-
+    handleStatusCodeExit($result['status'], $result['message']);
 }
 
 
 function handleStatusCodeExit( $status, $message)
 {
-    echo "Monitor Message: {$message}";
+    echo "MSG {$message}";
     if ($status == "CRIT")
     {
         exit(1);
