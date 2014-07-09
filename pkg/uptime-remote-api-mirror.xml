@@ -89,10 +89,8 @@
             <short_description> element-id </short_description>
             <long_description> ElementID from remote Instance </long_description>
             <validation_rule>
-                <integer/>
             </validation_rule>
             <error_message>
-                <integer> Must be an integer </integer>
             </error_message>
             <gui_type>
                 <integer/>
@@ -101,13 +99,11 @@
         <element name="monitor_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <default_value>9997</default_value>
-            <short_description> up.time API Port </short_description>
-            <long_description> The port that up.time Jetty is listening on (default: 9996) </long_description>
+            <short_description> Monitor ID </short_description>
+            <long_description> Monitor ID from Remote Instance </long_description>
             <validation_rule>
-                <integer/>
             </validation_rule>
-            <error_message>
-                <integer> The port must be an integer value </integer>
+            <error_message>    
             </error_message>
             <gui_type>
                 <integer/>
