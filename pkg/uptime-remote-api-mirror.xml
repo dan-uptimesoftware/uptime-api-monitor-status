@@ -98,7 +98,6 @@
         </element>
         <element name="monitor_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
-            <default_value>9997</default_value>
             <short_description> Monitor ID </short_description>
             <long_description> Monitor ID from Remote Instance </long_description>
             <validation_rule>
