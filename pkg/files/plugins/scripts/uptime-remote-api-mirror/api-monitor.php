@@ -39,7 +39,6 @@ if( isset ($monitor_id))
     echo "STATUS {$result['status']}\n";
     echo "MSG {$result['message']}\n";
     echo "monitor_name {$result['name']}\n";
-    echo "monitor_type {$result['type']}\n";
 
     if ($mirror_mode == "yes")
     {

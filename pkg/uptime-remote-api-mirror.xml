@@ -141,16 +141,6 @@
                 <string/>
             </gui_type>
         </element>
-        <element name="monitor_type" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
-            <control_options>width:10em</control_options>
-            <short_description>Monitor Type</short_description>
-            <long_description>Service Monitor Type</long_description>
-            <validation_rule/>  
-            <error_message/>
-            <gui_type>
-                <string/>
-            </gui_type>
-        </element>
         <element name="timer" parameter_type="output" data_type="integer" gui_basic="0"
             range_type="0" units="ms">
             <control_options>size:8</control_options>
