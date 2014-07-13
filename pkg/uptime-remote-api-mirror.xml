@@ -84,18 +84,6 @@
                 <string/>
             </gui_type>
         </element>
-        <element name="element_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
-            <control_options>width:10em</control_options>
-            <short_description> element-id </short_description>
-            <long_description> ElementID from remote Instance </long_description>
-            <validation_rule>
-            </validation_rule>
-            <error_message>
-            </error_message>
-            <gui_type>
-                <integer/>
-            </gui_type>
-        </element>
         <element name="monitor_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
             <short_description> Monitor ID </short_description>
@@ -108,20 +96,55 @@
                 <integer/>
             </gui_type>
         </element>
+        <element name="mirror_mode" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description> Mirror Mode </short_description>
+            <long_description> Status will mirror the remote Service Mintor</long_description>
+            <validation_rule>
+            </validation_rule>
+            <error_message>    
+            </error_message>
+            <gui_type>
+                <single_select type="dropdown">
+                    <value>off</value>
+                    <value>on</value>
+                </single_select>
+            </gui_type>
+        </element>
         <element name="STATUS" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
-            <short_description>Remote Status</short_description>
-            <long_description> Status of remote monitor </long_description>
+            <short_description>Monitor Status</short_description>
+            <long_description> Status of service monitor </long_description>
             <validation_rule/>  
             <error_message/>
             <gui_type>
                 <string/>
             </gui_type>
         </element>
-        <element name="MSG" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+        <element name="msg" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
             <control_options>width:10em</control_options>
-            <short_description>Remote MSG</short_description>
-            <long_description> Message from remote monitor </long_description>
+            <short_description>Montior MSG</short_description>
+            <long_description> Message from service monitor </long_description>
+            <validation_rule/>  
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="monitor_name" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description>Monitor Name</short_description>
+            <long_description>Service Monitor Name</long_description>
+            <validation_rule/>  
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="monitor_type" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description>Monitor Type</short_description>
+            <long_description>Service Monitor Type</long_description>
             <validation_rule/>  
             <error_message/>
             <gui_type>
