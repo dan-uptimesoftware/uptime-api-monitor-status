@@ -37,10 +37,10 @@ if( isset ($monitor_id))
 {
     $result = $api->getMonitorStatus($monitor_id);
     echo "STATUS {$result['status']}\n";
-    echo "MSG {$result['message']}\n";
+    echo "msg {$result['message']}\n";
     echo "monitor_name {$result['name']}\n";
 
-    if ($mirror_mode == "yes")
+    if ($mirror_mode == "on")
     {
         handleStatus($result['status']);
     }
@@ -50,11 +50,11 @@ if( isset ($monitor_id))
 function handleStatus( $status)
 {
 
-    if ($status == "CRIT")
+    if( $status == "WARN")
     {
         exit(1);
     }
-    elseif( $status == "WARN")
+    elseif ($status == "CRIT")
     {
         exit(2);
     }
@@ -62,7 +62,6 @@ function handleStatus( $status)
     {
         exit(3);
     }
-
     elseif( $status == "OK")
     {
         exit(0);
