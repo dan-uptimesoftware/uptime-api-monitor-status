@@ -81,7 +81,7 @@
                 <alphanumeric>required field</alphanumeric>
             </error_message>
             <gui_type>
-                <string/>
+                <password/>
             </gui_type>
         </element>
         <element name="monitor_id" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
