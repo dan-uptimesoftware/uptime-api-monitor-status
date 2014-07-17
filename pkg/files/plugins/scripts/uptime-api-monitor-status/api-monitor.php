@@ -39,6 +39,7 @@ if( isset ($monitor_id))
     echo "STATUS {$result['status']}\n";
     echo "msg {$result['message']}\n";
     echo "monitor_name {$result['name']}\n";
+    echo "element_name {$result['elementStatus']['name']}";
 
     if ($mirror_mode == "on")
     {

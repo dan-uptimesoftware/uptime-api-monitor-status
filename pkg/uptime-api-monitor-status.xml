@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0" target_grouping="other">
-    <class>up.time remote api mirror</class>
+    <class>Up.time Api Monitor Status</class>
     <exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
     <erdc_version>0.1</erdc_version>
     <category>Advanced and Script Monitors</category>
@@ -13,7 +13,7 @@
     <elements>
         <element name="process_linux" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">
             <control_options> size:40 </control_options>
-            <default_value>plugins/scripts/uptime-remote-api-mirror/api-monitor.sh</default_value>
+            <default_value>plugins/scripts/uptime-api-monitor-status/api-monitor.sh</default_value>
             <short_description>Script Name</short_description>
             <long_description>Name of the script/binary/process to be executed by up.time </long_description>
             <validation_rule>
@@ -28,7 +28,7 @@
         </element>
         <element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">
             <control_options> size:40 </control_options>
-            <default_value>plugins/scripts/uptime-remote-api-mirror/api-monitor.bat</default_value>
+            <default_value>plugins/scripts/uptime-api-monitor-status/api-monitor.bat</default_value>
             <short_description>Script Name</short_description>
             <long_description>Name of the script/binary/process to be executed by up.time </long_description>
             <validation_rule>
@@ -141,6 +141,16 @@
                 <string/>
             </gui_type>
         </element>
+        <element name="element_name" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>width:10em</control_options>
+            <short_description>Element Name</short_description>
+            <long_description>Name of Element where Monitor is running</long_description>
+            <validation_rule/>  
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
         <element name="timer" parameter_type="output" data_type="integer" gui_basic="0"
             range_type="0" units="ms">
             <control_options>size:8</control_options>
@@ -154,5 +164,5 @@
             </gui_type>
         </element>
     </elements>
-    <help>Locally Mirror the Status of a Monitor/Element from a Remote Up.time Instance's API</help>
+    <help>Check the Status and Details of another Service Monitor via the uptime api</help>
 </uptime>
